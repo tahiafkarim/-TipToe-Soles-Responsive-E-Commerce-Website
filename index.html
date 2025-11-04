@@ -1,0 +1,252 @@
+<!-- This is the directive indicating the html version -->
+<!doctype html>
+<html lang="en">
+<head>
+	<title>TipToe Soles - Premium Footwear Collection</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Discover our latest collection of premium shoes. From casual sneakers to elegant dress shoes, find your perfect pair at TipToe Soles  ">
+	<meta name="keywords" content="Shoes, Footwear, Sneaker, Sandals, Boots, Party Shoes">
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+	<!-- Header -->
+		<header class="header-custom">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between py-3">
+					<div class="d-flex align-items-center">
+						<a href="/"><img src="Images/logo.jpeg" alt="TipToe Soles Logo" class="logo-image me-2"></a>
+						<span class="h4 mb-0 fw-bold text-warning">TipToe Soles</span>
+					</div>
+
+					<div class="d-flex flex-grow-1 mx-4 search-input">
+						<div class="input-group">
+							<input type="text" placeholder="Search for shoes..." class="form-control rounded-pill border-2">
+							<button class="btn btn-warning rounded-pill position-absolute end-0 top-50 translate-middle-y me-2 search-button">
+								<i class="fas fa-search"></i>
+							</button>
+						</div>
+					</div>
+
+					<div class="d-flex align-items-center gap-3">
+						<button class="btn btn-outline-secondary rounded-circle search-button" title="Login">
+							<i class="fas fa-user"></i>
+						</button>
+						<button class="btn btn-outline-secondary rounded-circle search-button" title="Wishlist">
+							<i class="fas fa-heart"></i>
+						</button>
+						<button class="btn btn-outline-secondary rounded-circle position-relative search-button search-button" title="Shopping Cart">
+							<i class="fas fa-shopping-cart"></i>
+							<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+						</button>
+						<button class="btn btn-outline-secondary d-lg-none" title="Menu">
+							<i class="fas fa-bars"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Navigation -->
+		<nav class="navbar-sidebar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="pages/aboutus.html">About Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+				<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="pages/contactus.html">Contact Us</a></li>
+				<li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+			</ul>
+		</nav>
+
+		<!-- Animated Banner -->
+		<section class="banner">
+			<div class="banner-container">
+				<div class="banner-slider">
+					<div class="banner-slide active">
+						<div class="slide-content">
+							<div class="slide-image">
+								<img src="Images/Shoe1.jpeg" alt="Classic Black Slip-on">
+							</div>
+							<div class="slide-text">
+								<h1>Classic Black Slip-on</h1>
+								<p>Elegant comfort meets timeless style</p>
+								<span class="slide-price">$89.99</span>
+								<button class="cta-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="banner-slide">
+						<div class="slide-content">
+							<div class="slide-image">
+								<img src="Images/Shoe2.jpeg" alt="Summer Mesh Sandal">
+							</div>
+							<div class="slide-text">
+								<h1>Summer Mesh Sandal</h1>
+								<p>Perfect for warm weather adventures</p>
+								<span class="slide-price">$69.99</span>
+								<button class="cta-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="banner-slide">
+						<div class="slide-content">
+							<div class="slide-image">
+								<img src="Images/Shoe3.jpeg" alt="Platform Loafer">
+							</div>
+							<div class="slide-text">
+								<h1>Platform Loafer</h1>
+								<p>Make a statement with elevated style</p>
+								<span class="slide-price">$129.99</span>
+								<button class="cta-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="banner-slide">
+						<div class="slide-content">
+							<div class="slide-image">
+								<img src="Images/Shoe11.jpg" alt="White Party Heels">
+							</div>
+							<div class="slide-text">
+								<h1>White Party Heels</h1>
+								<p>Turn heads with timeless elegance at every event</p>
+								<span class="slide-price">$119.99</span>
+								<button class="cta-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<hr>
+		<!-- Featured Products -->
+			<section class="py-5 bg-white">
+				<div class="container">
+					<h2 class="text-center display-4 fw-bold text-dark mb-5">Featured Products</h2>
+					<div class="row g-4">
+						<div class="col-lg-3 col-md-6">
+							<div class="card h-100 shadow-sm product-card">
+								<div class="position-relative overflow-hidden featured-product">
+									<img src="Images/Shoe1.jpeg" alt="Black Slip-on Shoe" class="card-img-top h-100 object-fit-cover">
+									<div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+										<a href="product.html" class="btn btn-light btn-sm">Quick View</a>
+										<button class="btn btn-warning btn-sm">Add to Cart</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Classic Black Slip-on</a></h5>
+									<p class="h5 text-warning fw-bold">$89.99</p>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-lg-3 col-md-6">
+							<div class="card h-100 shadow-sm product-card">
+								<div class="position-relative overflow-hidden featured-product">
+									<img src="Images/Shoe2.jpeg" alt="Blue Mesh Sandal" class="card-img-top h-100 object-fit-cover">
+									<div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+										<a href="product.html" class="btn btn-light btn-sm">Quick View</a>
+										<button class="btn btn-warning btn-sm">Add to Cart</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Summer Mesh Sandal</a></h5>
+									<p class="h5 text-warning fw-bold">$69.99</p>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-lg-3 col-md-6">
+							<div class="card h-100 shadow-sm product-card">
+								<div class="position-relative overflow-hidden featured-product">
+									<img src="Images/Shoe3.jpeg" alt="Black Platform Loafer" class="card-img-top h-100 object-fit-cover">
+									<div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+										<a href="product.html" class="btn btn-light btn-sm">Quick View</a>
+										<button class="btn btn-warning btn-sm">Add to Cart</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Platform Loafer</a></h5>
+									<p class="h5 text-warning fw-bold">$129.99</p>
+									
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-lg-3 col-md-6">
+							<div class="card h-100 shadow-sm product-card">
+								<div class="position-relative overflow-hidden featured-product">
+									<img src="Images/Shoe4.jpeg" alt="Brown Platform Loafer" class="card-img-top h-100 object-fit-cover">
+									<div class="product-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center gap-2">
+										<a href="product.html" class="btn btn-light btn-sm">Quick View</a>
+										<button class="btn btn-warning btn-sm">Add to Cart</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title"><a href="product.html" class="text-decoration-none text-dark">Brown Platform Loafer</a></h5>
+									<p class="h5 text-warning fw-bold">$119.99</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+	<!-- Footer -->
+	<footer class="bg-dark text-light py-5">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-3 col-md-6">
+					<h5 class="text-warning mb-3">TipToe Soles</h5>
+					<p class="text-light">Your premier destination for quality footwear. We bring you the latest trends in comfort and style.</p>
+					<div class="d-flex gap-3">
+						<a href="#" class="btn btn-outline-warning rounded-circle social-media"><i class="fab fa-facebook"></i></a>
+						<a href="#" class="btn btn-outline-warning rounded-circle social-media"><i class="fab fa-twitter"></i></a>
+						<a href="#" class="btn btn-outline-warning rounded-circle social-media"><i class="fab fa-instagram"></i></a>
+						<a href="#" class="btn btn-outline-warning rounded-circle social-media"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h6 class="text-warning mb-3">Quick Links</h6>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#about" class="text-light text-decoration-none">About Us</a></li>
+						<li class="mb-2"><a href="#products" class="text-light text-decoration-none">Products</a></li>
+						<li class="mb-2"><a href="#services" class="text-light text-decoration-none">Services</a></li>
+						<li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h6 class="text-warning mb-3">Customer Service</h6>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#returns" class="text-light text-decoration-none">Returns & Refunds</a></li>
+						<li class="mb-2"><a href="#exchange" class="text-light text-decoration-none">Exchange</a></li>
+						<li class="mb-2"><a href="#delivery" class="text-light text-decoration-none">Delivery</a></li>
+						<li class="mb-2"><a href="#privacy" class="text-light text-decoration-none">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h6 class="text-warning mb-3">Contact Info</h6>
+					<p class="text-light mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Fashion Street, Style City</p>
+					<p class="text-light mb-2"><i class="fas fa-phone me-2"></i> +61 455 123 456</p>
+					<p class="text-light mb-2"><i class="fas fa-envelope me-2"></i> info@tiptoesoles.com.au</p>
+				</div>
+			</div>
+			<hr class="my-4 border-secondary">
+			<div class="text-center">
+				<p class="text-light">&copy; 2025 TipToe Soles. All rights reserved.</p>
+			</div>
+		</div>
+		<div class = 'dateandtime'>
+			00:00:00
+		</div>
+		<script src ="Scripts/dateandtime.js"></script>
+	</footer>
+</body>
+
+</html>
